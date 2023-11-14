@@ -27,7 +27,7 @@ dependencies {
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
 
 	//p6spy
-	//implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'
+	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'
 
 	// JPA 설정
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
