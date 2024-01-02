@@ -2,7 +2,7 @@
 ---
 ## API
 - Swagger http://localhost:8080/swagger-ui/index.html
-- 
+![2024-01-02_14-14-30](https://github.com/mooooonmin/3th_week_lv2/assets/118891828/8946a675-fde7-4537-9c6d-1d4f7f215be7)
 ---
 ## 요구사항 (필수 구현 기능)
 - [ ]  도서 등록 기능
