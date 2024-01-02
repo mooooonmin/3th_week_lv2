@@ -14,6 +14,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 @RequestMapping("/api/books")
 public class LoanController {
+
     private final LoanService loanService;
 
     @PostMapping("/{bookId}/loans")

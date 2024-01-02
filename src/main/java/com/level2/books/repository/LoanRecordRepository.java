@@ -9,9 +9,11 @@ import java.util.Optional;
 
 @Repository
 public interface LoanRecordRepository extends JpaRepository<LoanRecord, Long> {
+
     Optional<LoanRecord> findByBookIdAndIsReturnedFalse(Long bookId);
     boolean existsByMemberIdAndIsReturnedFalse(Long memberId);
     Optional<LoanRecord> findByBookIdAndMemberIdAndIsReturnedFalse(Long bookId, Long memberId);
     List<LoanRecord> findByMemberIdOrderByLoanDateAsc(Long memberId);
     List<LoanRecord> findByMemberIdAndIsReturnedFalseOrderByLoanDateAsc(Long memberId);
+
 }

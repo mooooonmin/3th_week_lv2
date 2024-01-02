@@ -50,4 +50,5 @@ public class MemberService {
             return new LoanHistoryDto(loanRecord, book, member);
         }).toList();
     }
+
 }

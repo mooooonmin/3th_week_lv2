@@ -47,4 +47,5 @@ public class Member {
     public void  setPenaltyExpirationDate(LocalDateTime penaltyExpirationDate){
         this.penaltyExpirationDate = penaltyExpirationDate;
     }
+
 }

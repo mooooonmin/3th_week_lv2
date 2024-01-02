@@ -17,16 +17,14 @@ import java.util.Map;
 @RequiredArgsConstructor
 @RequestMapping("/api/members")
 public class MemberController {
+
     private final MemberService memberService;
-    private final LoanService loanService;
 
     @PostMapping("")
     public MemberResponseDto registerMember(@RequestBody MemberRequestDto memberRequestDto) {
         return memberService.registerMember(memberRequestDto);
     }
 
-    /* 대출 내역 조회 조건 추가에 따른 API 증설
-     * -한 회원의 모든 대출 내역 조회 */
     @GetMapping("/{memberId}/loans/all")
     public ResponseEntity<Map<String, Object>> getAllLoansByMember(@PathVariable Long memberId) {
         return getLoanHistoryResponse(memberId, true);

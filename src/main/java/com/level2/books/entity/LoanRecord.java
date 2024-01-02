@@ -15,17 +15,22 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class LoanRecord{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(nullable = false)
     private Long bookId;
+
     @Column(nullable = false)
     private Long memberId;
+
     @Column
     private Boolean isReturned;
+
     @Column
     private LocalDateTime loanDate;
+
     @Column
     private LocalDateTime returnDate;
 

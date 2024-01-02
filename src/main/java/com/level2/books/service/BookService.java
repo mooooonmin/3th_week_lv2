@@ -44,4 +44,5 @@ public class BookService {
     private boolean isBookAvailableForLoan(Long bookId) {
         return loanRecordRepository.findByBookIdAndIsReturnedFalse(bookId).isEmpty();
     }
+
 }
